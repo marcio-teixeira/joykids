@@ -1,0 +1,148 @@
+#ultimas{
+    padding: 40px 0 0;
+    h3{
+        color: #000;
+        font-family: $comfortaaL;
+        font-size: rem(26);
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .chamadaBlog{
+        color: $vermelho;
+        display: block;
+        margin-bottom: 40px;
+        @include transition();
+        &:hover{
+            color: $roxo;
+        }
+        h4{
+            font-family: $comfortaaL;
+            font-size: rem(18);
+            margin: 15px 0;
+            text-transform: uppercase;
+        }
+        p{
+            font-family: $comfortaaL;
+            font-size: rem(14);
+        }
+    }
+}
+#redes{
+    padding: 60px 0;
+    h4{
+        font-family: $comfortaaL;
+        font-size: rem(26);
+        font-weight: normal;
+    }
+    a{
+        color: $branco;
+        display: block;
+        height: 76px;
+        font-size: rem(55);
+        line-height: 82px;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+    }
+    .face{
+        background: #4266b2;
+        @include transition();
+        &:hover{
+            background: #204eaf;
+        }
+    }
+    .insta{
+        background: $roxo;
+        @include transition();
+        &:hover{
+            background: $roxoHover;
+        }
+    }
+}
+#depoimentos{
+    background-image: url(../images/img-depoimento.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    h3{
+        color: $branco;
+        font-family: $comfortaaL;
+        font-size: rem(26);
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+    .sliderDepoimento{
+        overflow: hidden;
+        padding-bottom: 50px;
+        .item{
+            padding-top: 10px;
+            p{
+                color: $branco;
+                font-family: $comfortaaL;
+                font-size: rem(18);
+                span{
+                    color: $vermelho;
+                    font-size: rem(50);
+                    line-height: 10px;
+                    vertical-align: bottom;
+                }
+            }
+        }
+        .slick-next{
+            font-size: rem(50);
+            right: 40%;
+            top: 95%;
+        }
+        .slick-prev{
+            font-size: rem(50);
+            left: 40%;
+            top: 95%;
+        }
+    }
+}
+footer{
+    background: #eee8e8;
+    padding: 30px 0;
+    h4{
+        font-family: $comfortaaL;
+        font-size: rem(22);
+        font-weight: normal;
+    }
+    p{
+        font-family: $comfortaaL;
+        font-size: rem(14);
+        a{
+            color: $roxo;
+            @include transition();
+            &:hover{
+                color: #000000;
+            }
+        }
+    }
+    p.telefones{
+        a{
+            color: #000000;
+            margin-right: 20px;
+            &:hover{
+                color: $roxo;
+            }
+        }
+    }
+    p.copy{font-size: rem(12);}
+    .aRight{
+        text-align: right;
+    }
+    .redes{
+        color: #000;
+        display: inline-block;
+        font-size: rem(50);
+        margin-left: 20px;
+        @include transition();
+        &:hover{
+            color: $vermelho;
+        }
+    }
+}

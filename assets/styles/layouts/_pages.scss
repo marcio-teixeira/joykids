@@ -1,0 +1,1119 @@
+/*--------------------
+Home
+-------------------------*/
+.bannerHome{
+    height: 800px;
+    overflow: hidden;
+    .bannerslider{
+        .item{
+            height: 800px;
+            .container{
+                height: 100%;
+                .row{
+                    height: 100%;
+                    h3{
+                        color: $branco;
+                        font-family: $comfortaaB;
+                        font-size: rem(22);
+                        margin: 0 0 20px;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        color: $branco;
+                        font-family: $comfortaa;
+                        font-size: rem(16);
+                        margin: 0 0 20px;
+                    }
+                    a{
+                        color: $branco;
+                        display: block;
+                        font-family: $comfortaaB;
+                        font-size: rem(15);
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        width: 130px;
+                    }
+                    a.roxo{
+                        background-color: $roxo;
+                        @include transition();
+                        &:hover{
+                            background-color: $roxoHover;
+                        }
+                    }
+                    a.amarelo{
+                        background-color: $amarelo;
+                        color: #7b479c !important;
+                        @include transition();
+                        &:hover{
+                            background-color: $amareloHover;
+                        }
+                    }
+                    a.vermelho{
+                        background-color: $vermelho;
+                        @include transition();
+                        &:hover{
+                            background-color: $vermelhoHover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#unidades{
+    background: url(../images/bg-cinza.jpg) center top;
+    min-height: 400px;
+    article, .container{
+        min-height: 400px;
+        > .row{
+            min-height: 400px;
+        }
+    }
+    h2{
+        color: $roxo;
+        font-size: rem(26);
+        font-weight: 300;
+        margin: 0 0 30px;
+        strong{
+            font-size: rem(26);
+            font-weight: 700;
+        }
+    }
+    .linkUnidade{
+        display: block;
+        width: 100%;
+        span{
+            display: block;
+            font-size: rem(22);
+            height: 66px;
+            line-height: 66px;
+            text-align: center;
+            width: 100%;
+        }
+        span.roxo{
+            background: $roxo;
+            color: $branco;
+            @include transition();
+        }
+        span.amarelo{
+            background: $amarelo;
+            color: $roxo;
+            @include transition();
+        }
+        span.vermelho{
+            background: $vermelho;
+            color: $branco;
+            @include transition();
+        }
+        &:hover{
+            span.roxo{
+                background-color: $roxoHover; 
+            }
+            span.amarelo{
+                background-color: $amareloHover; 
+            }
+            span.vermelho{
+                background-color: $vermelhoHover; 
+            }
+        }
+    }
+}
+#sliderOrcamento{
+    height: 400px;
+    overflow: hidden;
+    .sliderOrcamento{
+        .item{
+            background-position: center top;
+            height: 400px;
+            .container{
+                height: 100%;
+                .row{
+                    height: 100%;
+                    p{
+                        color: $branco;
+                        font-family: $comfortaa;
+                        font-size: rem(22);
+                        font-weight: 300;
+                        margin: 0 0 20px;
+                    }
+                    a{
+                        display: inline-block;
+                        font-family: $comfortaa;
+                        font-size: rem(22);
+                        font-weight: 300;
+                        padding: 15px;
+                        text-align: center;
+                    }
+                    a.roxo{
+                        background-color: $roxo;
+                        color: $branco;
+                        @include transition();
+                        &:hover{
+                            background-color: $roxoHover;
+                        }
+                    }
+                    a.amarelo{
+                        background-color: $amarelo;
+                        color: $roxo;
+                        @include transition();
+                        &:hover{
+                            background-color: $amareloHover;
+                        }
+                    }
+                    a.vermelho{
+                        background-color: $vermelho;
+                        color: $branco;
+                        @include transition();
+                        &:hover{
+                            background-color: $vermelhoHover;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            li:first-child{margin-left: 140px}
+        }
+    }
+}
+
+/*=======================================
+Lista Tipos de Festa
+=======================================*/
+
+.chamadaFesta{
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    .hover{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-family: $comfortaaB;
+        font-size: rem(22);
+        font-weight: normal;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        @include transition();
+    }
+    &:hover{
+        .hover{
+            height: 100%;
+            padding-top: 43%;
+        }
+    }
+}
+.chamadaInfantil{
+    .hover{
+        @include transition();
+        background: rgba(47,122,171,1);
+        color: $branco;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(47,122,171,0.7);
+            color: $branco;
+        }
+    }
+}
+.chamadaTeen{
+    .hover{
+        @include transition();
+        background: rgba(112,34,119,1);
+        color: $amarelo;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(112,34,119,0.7);
+            color: $amarelo;
+        }
+    }
+}
+.chamadaEscolar{
+    .hover{
+        @include transition();
+        background: rgba(234,105,83,1);
+        color: $amarelo;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(234,105,83,0.7);
+            color: $amarelo;
+        }
+    }
+}
+.chamadaWedding{
+    .hover{
+        @include transition();
+        background: rgba(245,244,239,1);
+        color: $roxo;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(245,244,239,0.7);
+            color: $roxo;
+        }
+    }
+}
+.chamadaConfraternizacao{
+    .hover{
+        @include transition();
+        background: rgba(255,162,105,1);
+        color: $branco;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(255,162,105,0.7);
+            color: $branco;
+        }
+    }
+}
+.chamadaBodas{
+    .hover{
+        @include transition();
+        background: rgba(234,243,244,1);
+        color: $roxo;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(234,243,244,0.7);
+            color: $roxo;
+        }
+    }
+}
+.chamadaFormatura{
+    .hover{
+        @include transition();
+        background: rgba(199,198,199,1);
+        color: $roxo;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(199,198,199,0.7);
+            color: $roxo;
+        }
+    }
+}
+.chamadaFantasia{
+    .hover{
+        @include transition();
+        background: rgba(246,167,0,1);
+        color: $branco;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(246,167,0,0.7);
+            color: $branco;
+        }
+    }
+}
+.chamadaDebutante{
+    .hover{
+        @include transition();
+        background: rgba(240,101,152,1);
+        color: $amarelo;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(240,101,152,0.7);
+            color: $amarelo;
+        }
+    }
+}
+
+/*=========================================
+Internas Festas
+============================================*/
+
+.bannerInterna{
+    height: 300px;
+    .container{
+        height: 100%;
+        .row{
+            height: 100%;
+            h1{
+                color: $branco;
+                font-family: $comfortaaB;
+                font-size: rem(32);
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+#breadcrumbs{
+    color: $roxo;
+    padding: 5px 0 10px;
+    text-transform: uppercase;
+    span{
+        font-size: rem(10);
+    }
+    a{
+        color: $roxo;
+        font-size: rem(10);
+        @include transition();
+        &:hover{
+            color: $roxoHover;
+        }
+    }
+
+}
+#conteudoFestas{
+    padding: 50px 0;
+    h2{
+        font-family: $comfortaaB;
+        font-size: rem(18);
+        font-weight: normal;
+        margin: 0 0 20px;
+    }
+    p{
+        font-size: rem(14);
+        margin: 0 0 20px;
+    }
+}
+#recomendamos{
+    h3{
+        font-family: $comfortaaB;
+        font-size: rem(18);
+        font-weight: normal;
+    }
+}
+#orcamento{
+    background: #f8effd;
+    .colSlider{
+        padding: 0;
+        .formulario{
+            float: right;
+            max-width: 500px;
+            padding: 30px 15px 0;
+            width: 100%;
+            h3{
+                font-family: $comfortaaL;
+                font-size: rem(18);
+                font-weight: normal;
+                strong{
+                    font-family: $comfortaaB;
+                    font-size: rem(18);
+                    font-weight: normal;
+                }
+            }
+            .campo{
+                margin-bottom: 5px;
+                .ipt{
+                    background: #f8effd;
+                    border: 1px solid $roxo;
+                    color: #000;
+                    font-family: $comfortaaL;
+                    font-size: rem(14);
+                    font-weight: normal;
+                    height: 45px;
+                    padding: 0 15px;
+                    width: 100%;
+                }
+                select{
+                    background: #f8effd;
+                    border: 1px solid $roxo;
+                    color: #000;
+                    font-family: $comfortaaL;
+                    font-size: rem(14);
+                    font-weight: normal;
+                    height: 45px;
+                    padding: 0 15px;
+                    width: 100%;
+                }
+                textarea{
+                    background: #f8effd;
+                    border: 1px solid $roxo;
+                    color: #000;
+                    font-family: $comfortaaL;
+                    font-size: rem(14);
+                    font-weight: normal;
+                    height: 90px;
+                    padding: 15px;
+                    width: 100%;
+                }
+                .btEnviar{
+                    background: $vermelho;
+                    border: none;
+                    color: #fff;
+                    font-family: $comfortaaB;
+                    font-size: rem(14);
+                    font-weight: normal;
+                    height: 45px;
+                    padding: 0 15px;
+                    width: 100%;
+                    @include transition();
+                    &:hover, &:focus{
+                        background: $vermelhoHover;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .slick-dotted.slick-slider{
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*=========================================
+Lista Unidades
+========================================*/
+
+.chamadaUnidades{
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    .hover{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-family: $comfortaaB;
+        font-size: rem(22);
+        font-weight: normal;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        @include transition();
+    }
+    &:hover{
+        .hover{
+            height: 100%;
+            padding-top: 50%;
+        }
+    }
+}
+.chamadaJoaquina{
+    .hover{
+        @include transition();
+        background: rgba(123,71,156,1);
+        color: $branco;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(123,71,156,0.7);
+            color: $branco;
+        }
+    }
+}
+.chamadaAtaliba{
+    .hover{
+        @include transition();
+        background: rgba(237,28,36,1);
+        color: $branco;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(237,28,36,0.7);
+            color: $branco;
+        }
+    }
+}
+.chamadaMooca{
+    .hover{
+        @include transition();
+        background: rgba(255,242,0,1);
+        color: $roxo;
+    }
+    &:hover, &:focus{
+        .hover{
+            background: rgba(255,242,0,0.7);
+            color: $roxo;
+        }
+    }
+}
+
+/*=======================================
+Unidades Interna
+========================================*/
+
+#conteudoUnidade{
+    background: url(../images/bg-cinza.jpg) center top;
+    padding: 0 0 30px;
+    .migalha{
+        padding-bottom: 30px;
+    }
+    h2{
+        color: $roxo;
+        font-family: $comfortaaB;
+        font-size: rem(18);
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: rem(14);
+        margin: 0 0 20px;
+    }
+    .colCapacidade{
+        text-align: center;
+        img{
+            display: block;
+            margin: 0 auto 10px;
+        }
+        span{
+            font-family: $comfortaaL;
+            font-size: rem(16);
+            font-weight: normal;
+            strong{
+                color: $roxo;
+                font-family: $comfortaaB;
+                font-size: rem(20);
+                font-weight: normal;
+            }
+        }
+    }
+}
+#nossoEspaco{
+    padding: 30px 0;
+    h2{
+        color: $roxo;
+        font-family: $comfortaaB;
+        font-size: rem(18);
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: rem(14);
+    }
+}
+#galeriaFotos{
+    padding: 0 0 60px;
+    h2{
+        color: $roxo;
+        font-family: $comfortaaB;
+        font-size: rem(18);
+        font-weight: normal;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .colGaleria{
+        overflow: hidden;
+        padding: 0;
+        .sliderGaleria{
+            .item{
+                padding: 0 6px;
+            }
+            .slick-prev,
+            .slick-next{
+                background: $roxo;
+                display: block;
+                width: 70px;
+                height: 70px;
+                z-index: 10;
+            }
+            .slick-prev{
+                &:before{
+                    content: '←';
+                }
+            }
+            .slick-next{
+                &:before{
+                    content: '→';
+                }
+            }
+        }
+    }
+}
+#atracoes{
+    padding: 0 0 60px;
+    h2{
+        color: $roxo;
+        font-family: $comfortaaB;
+        font-size: rem(18);
+        font-weight: normal;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .listaAtracoes{
+        text-align: center;
+        a{
+            display: inline-block;
+            padding: 5px;
+            position: relative;
+            width: 19%;
+            .hover{
+                background: rgba(133,96,168,0.7);
+                color: $branco;
+                height: calc(100% - 10px);
+                opacity: 0;
+                padding-top: 46%;
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                text-align: center;
+                width: calc(100% - 10px);
+                @include transition();
+            }
+            &:hover{
+                .hover{opacity: 1;}
+            }
+        }
+    }
+}
+#localizacao{
+    padding: 0 0 60px;
+    h2{
+        color: $roxo;
+        font-family: $comfortaaB;
+        font-size: rem(18);
+        font-weight: normal;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .colLocalizacao{
+        background: $roxo;
+        height: 200px;
+        padding: 0;
+        h3{
+            color: $branco;
+            font-family: $comfortaaL;
+            font-size: rem(14);
+            font-weight: normal;
+            margin-bottom: 20px;
+            padding: 40px 15px 0;
+        }
+        p{
+            color: $branco;
+            font-family: $comfortaaL;
+            font-size: rem(14);
+            padding: 0 15px;
+        }
+    }
+    .colMapa{padding: 0;}
+}
+
+/*=======================================
+O Joy Kids
+========================================*/
+
+.conteudoInstitucional{
+    a{
+        color: $vermelho;
+        @include transition();
+        &:hover, &:focus{
+            color: $roxo;
+        }
+    }
+}
+
+/*========================================
+Cardápios
+========================================*/
+
+#cardapios{
+    .colCardapio{
+        margin-bottom: 30px;
+        img{margin-bottom: 15px}
+        h3{
+            font-family: $comfortaaB;
+            font-size: rem(16);
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        p{
+            font-family: $comfortaaL;
+            font-size: rem(14);
+        }
+    }
+}
+
+/*=========================================
+Contato
+========================================*/
+
+.conteudoContato{
+    h4{
+        font-family: $comfortaaB;
+        font-size: rem(16);
+        font-weight: normal;
+    }
+    p{
+        a{
+            color: $roxo;
+            font-family: $comfortaaB;
+            font-size: rem(18);
+            font-weight: normal;
+            @include transition();
+            &:hover{
+                color: $roxoHover;
+            }
+        }
+    }
+}
+.formularioContato{
+    .campo{
+        margin-bottom: 5px;
+        .ipt{
+            background: #fff;
+            border: 1px solid $roxo;
+            color: #000;
+            font-family: $comfortaaL;
+            font-size: rem(14);
+            font-weight: normal;
+            height: 45px;
+            padding: 0 15px;
+            width: 100%;
+        }
+        select{
+            background: #fff;
+            border: 1px solid $roxo;
+            color: #000;
+            font-family: $comfortaaL;
+            font-size: rem(14);
+            font-weight: normal;
+            height: 45px;
+            padding: 0 15px;
+            width: 100%;
+        }
+        textarea{
+            background: #fff;
+            border: 1px solid $roxo;
+            color: #000;
+            font-family: $comfortaaL;
+            font-size: rem(14);
+            font-weight: normal;
+            height: 90px;
+            padding: 15px;
+            width: 100%;
+        }
+        .btEnviar{
+            background: $vermelho;
+            border: none;
+            color: #fff;
+            font-family: $comfortaaB;
+            font-size: rem(14);
+            font-weight: normal;
+            height: 45px;
+            padding: 0 15px;
+            width: 100%;
+            @include transition();
+            &:hover, &:focus{
+                background: $vermelhoHover;
+                color: #fff;
+            }
+        }
+    }
+}
+#listaUnidades{
+    .boxUnidade{
+        min-height: 200px;
+        margin: 0;
+        overflow: hidden;
+        h2{
+            color: $branco;
+            font-family: $comfortaaL;
+            font-size: rem(14);
+            font-weight: normal;
+            margin-bottom: 20px;
+            padding: 40px 15px 0;
+        }
+        p{
+            color: $branco;
+            font-family: $comfortaaL;
+            font-size: rem(14);
+            padding: 0 15px;
+        }
+    }
+    .roxoBox{
+        background: $roxo;
+    }
+    .amareloBox{
+        background: $amarelo;
+        h2, p{
+            color: $roxo;
+        }
+    }
+    .vermelhoBox{
+        background: $vermelho;
+    }
+    .mapa{
+        margin: 0 0 40px;
+        overflow: hidden;
+    }
+}
+
+/*==========================================
+Media Querys
+============================================*/
+
+@media (max-width: 575px){
+    .bannerHome{
+        height: 350px;
+        .bannerslider{
+            .item{
+                height: 350px;
+                .container{
+                    height: 100%;
+                    .row{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #unidades{
+        padding-top: 30px;
+        article, .container{
+            min-height: 300px;
+            > .row{
+                min-height: 300px;
+            }
+        }
+        .linkUnidade{margin-bottom: 30px;}
+    }
+    #sliderOrcamento{
+        height: 400px;
+        overflow: hidden;
+        .sliderOrcamento{
+            .item{
+                background-position: right bottom;
+                height: auto;
+                padding-bottom: 80px;
+                .container{
+                    height: 100%;
+                    .row{
+                        height: 100%;
+                        .colImgMobile{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .slick-dots{
+                bottom: 70px;
+                li:first-child{margin-left: 0;}
+            }
+        }
+    }
+    .bannerInterna{
+        .container{
+            .row{
+                h1{
+                    font-size: rem(25);
+                }
+            }
+        }
+    }
+    #orcamento{
+        .colSlider{
+            .formulario{
+                float: none;
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 30px 15px;
+            }
+        }
+    }
+    .chamadaFesta{
+        .hover{
+            font-size: rem(14);
+        }
+    }
+    #nossoEspaco{
+        padding: 30px 0;
+        h2{
+            margin-top: 30px;
+        }
+    }
+    #galeriaFotos{
+        .colGaleria{
+            .sliderGaleria{
+                .slick-prev{
+                    height: 40px;
+                    width: 40px;
+                    top: 24px;
+                    left: auto;
+                    right: 5px;
+                }
+                .slick-next{
+                    height: 40px;
+                    width: 40px;
+                    top: 66px;
+                    right: 5px;
+                }
+            }
+        }
+    }
+    #atracoes{
+        .listaAtracoes{
+            a{
+                width: 49%;
+            }
+        }
+    }
+}
+
+/*//////////////////////////////////////////////////*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .bannerHome{
+        height: 500px;
+        .bannerslider{
+            .item{
+                height: 500px;
+                .container{
+                    height: 100%;
+                    .row{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #unidades{
+        min-height: 300px;
+        article, .container{
+            min-height: 300px;
+            > .row{
+                min-height: 300px;
+            }
+        }
+    }
+    #orcamento{
+        .colSlider{
+            .formulario{
+                float: none;
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 30px 15px;
+            }
+        }
+    }
+    .chamadaFesta{
+        .hover{
+            font-size: rem(14);
+        }
+    }
+    #galeriaFotos{
+        .colGaleria{
+            .sliderGaleria{
+                .slick-prev{
+                    top: 40px;
+                    left: auto;
+                    right: 62px;
+                }
+                .slick-next{
+                    top: 112px;
+                    right: 62px;
+                }
+            }
+        }
+    }
+    #atracoes{
+        .listaAtracoes{
+            a{
+                width: 32.5%;
+            }
+        }
+    }
+}
+
+/*////////////////////////////////////////////////////*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #unidades{
+        min-height: 300px;
+        article, .container{
+            min-height: 300px;
+            > .row{
+                min-height: 300px;
+            }
+        }
+    }
+    .chamadaFesta{
+        .hover{
+            font-size: rem(15);
+        }
+    }
+    #galeriaFotos{
+        .colGaleria{
+            .sliderGaleria{
+                .slick-prev{
+                    top: 40px;
+                    left: auto;
+                    right: 112px;
+                }
+                .slick-next{
+                    top: 112px;
+                    right: 112px;
+                }
+            }
+        }
+    }
+    #atracoes{
+        .listaAtracoes{
+            a{
+                width: 24.5%;
+            }
+        }
+    }
+}
+
+/*/////////////////////////////////////////////////////*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .chamadaFesta{
+        .hover{
+            font-size: rem(18);
+        }
+    }
+    #galeriaFotos{
+        .colGaleria{
+            .sliderGaleria{
+                .slick-prev{
+                    top: 40px;
+                    left: auto;
+                    right: 230px;
+                }
+                .slick-next{
+                    top: 112px;
+                    right: 230px;
+                }
+            }
+        }
+    }
+}
+
+/*///////////////////////////////////////////////////////*/
+
+@media (min-width: 1200px) {
+    #galeriaFotos{
+        .colGaleria{
+            .sliderGaleria{
+                .slick-prev{
+                    top: 40px;
+                    left: auto;
+                    right: 230px;
+                }
+                .slick-next{
+                    top: 112px;
+                    right: 230px;
+                }
+            }
+        }
+    }
+}
+
+/*///////////////////////////////////////////////////////*/
+
+@media (min-width: 1500px) {
+    #galeriaFotos{
+        .colGaleria{
+            .sliderGaleria{
+                .slick-prev{
+                    top: 40px;
+                    left: auto;
+                    right: 515px;
+                }
+                .slick-next{
+                    top: 112px;
+                    right: 515px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<?php /* Template Name: Tipos de Festa */ ?>
+<?php
+while (have_posts()) :
+the_post();
+?>
+<div class="bannerInterna" style="background: url(<?php echo get_template_directory_uri(); ?>/dist/images/banner-interna.jpg) no-repeat center top / cover;">
+    <div class="container">
+        <div class="row align-items-center">
+           <div class="col-12"><h1><?php the_title();?></h1></div>
+        </div>
+    </div>
+</div>
+<div class="migalha">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <?php
+                if ( function_exists('yoast_breadcrumb') ) {
+                    yoast_breadcrumb('<div id="breadcrumbs">','</div>');
+                } ?>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="conteudoFestas">
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-7">
+                    <?php echo the_content() ?><br><br>
+                </div>
+                <div class="col-12">
+                    <?php if (get_field('banner_secundario')) : ?>
+                    <?php
+                    $Banner = get_field('banner_secundario');
+                    ?>
+                    <img class="img-fluid" alt="<?php echo $Banner['alt']; ?>" title="<?php echo $Banner['alt']; ?>" src="<?php echo $Banner['url']; ?>">
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+<section id="recomendamos">
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <h3>RECOMENDAMOS PARA ESSA FESTA:</h3>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8">
+                    <?php if (get_field('recomendacao_para_festa')) : ?>
+                    <?php
+                    $recomendacoes = get_field('recomendacao_para_festa');
+                    ?>
+                    <?php foreach ($recomendacoes as $recomendacao) :?>
+                    <img alt="<?php echo $recomendacao['imagem_recomenda']['title'];?>" title="<?php echo $recomendacao['imagem_recomenda']['title'];?>" src="<?php echo $recomendacao['imagem_recomenda']['url'];?>">
+                    <?php endforeach;?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+<?php get_template_part('templates/form-orcamento'); ?>
+
+<?php endwhile; ?>

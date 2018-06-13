@@ -1,0 +1,181 @@
+header{
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    @include transition();
+    .menuTopo{
+        text-align: right;
+        .menuPrincipal{
+            float: right;
+            padding-top: 30px;
+            li{
+                padding: 10px 15px 5px;
+                position: relative;
+                a{
+                    color: $branco;
+                    display: inline-block;
+                    font-family: $comfortaa;
+                    font-size: rem(14);
+                    font-weight: 300;
+                    padding-bottom: 5px;
+                    &:hover{
+                        background: url(../images/bullet-menu.png) no-repeat 3px 16px;
+                    }
+                }
+                .sub-menu{
+                    background: rgba(132,71,156,.95);
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    display: none;
+                    text-align: left;
+                    width: 250px;
+                    @include transition();
+                }
+            }
+            li:hover{
+                .sub-menu{
+                    display: block;
+                }
+            }
+            .current-menu-item{
+                > a{
+                    background: url(../images/bullet-menu.png) no-repeat 3px 16px;
+                }
+            }
+        }
+        .links{
+            float: right;
+            padding-top: 30px;
+            .linkRede{
+                color: $branco;
+                display: inline-block;
+                font-size: 20px;
+                @include transition();
+                &:hover{
+                    color: $vermelho;
+                }
+            }
+            .linkRede:first-child{margin-right: 15px;}
+            .btMenu{
+                color: $branco;
+                float: right;
+                font-size: 20px;
+                margin-left: 25px;
+                @include transition();
+                &:hover{
+                    color: $vermelho;
+                }
+            }
+        }
+    }
+}
+.stickHeader{
+    background: rgba(132,71,156,.95);
+}
+
+/*//////////////////////////////////////////////////*/
+@media (max-width: 575px){
+    header{
+
+    }
+    .mm-opened{
+        header{
+            -webkit-transform: translate(-80%, 0);
+            -moz-transform: translate(-80%, 0);
+            -ms-transform: translate(-80%, 0);
+            -o-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
+        }
+    }
+    #menuMobile{
+        .mm-listview{display: block !important;}
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    header{
+
+    }
+    .mm-opened{
+        header{
+            -webkit-transform: translate(-80%, 0);
+            -moz-transform: translate(-80%, 0);
+            -ms-transform: translate(-80%, 0);
+            -o-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
+        }
+    }
+    #menuMobile{
+        .mm-listview{display: block !important;}
+    }
+}
+
+/*////////////////////////////////////////////////////*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header{
+
+    }
+    .mm-opened{
+        header{
+            -webkit-transform: translate(-440px, 0);
+            -moz-transform: translate(-440px, 0);
+            -ms-transform: translate(-440px, 0);
+            -o-transform: translate(-440px, 0);
+            transform: translate(-440px, 0);
+        }
+    }
+    #menuMobile{
+        .mm-listview{display: block !important;}
+    }
+}
+
+/*/////////////////////////////////////////////////////*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header{
+        .menuTopo{
+            .menuPrincipal{
+                li{
+                    padding: 10px 13px 5px;
+                }
+            }
+            .linkRede{
+                color: $branco;
+                display: inline-block;
+                font-size: 20px;
+                @include transition();
+                &:hover{
+                    color: $vermelho;
+                }
+            }
+            .linkRede:last-child{margin-left: 13px;}
+        }
+    }
+    header.stickHeader{
+        @include transition();
+    }
+    #menuMobile{display: none}
+}
+
+/*///////////////////////////////////////////////////////*/
+
+@media (min-width: 1200px) {
+    header.stickHeader{
+        @include transition();
+    }
+    #menuMobile{display: none}
+}
+
+/*///////////////////////////////////////////////////////*/
+
+@media (min-width: 1500px) {
+    header.stickHeader{
+        @include transition();
+    }
+    #menuMobile{display: none}
+}
